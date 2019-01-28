@@ -1,0 +1,10 @@
+<h1>RAM Here</h1>
+<hr>
+<h2>
+  <input type="text" #myinput>
+  <button (click)="sendMessager(myinput.value)">SEND</button>
+</h2>
+<p id="left" *ngFor="let msg of chatMsgs">
+  {{msg}}
+ 
+</p>

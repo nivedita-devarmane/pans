@@ -1,0 +1,39 @@
+div.right{
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 10px solid#32BDF2;
+    background-color: black;
+    opacity: 0.8;
+    height: 60px;
+    width: 100%;
+    
+    
+    
+}
+img.logo{
+width:300px;
+height: 60px;
+}
+div.right a{
+    padding-top: 16px;
+}
+a{
+    float: right;
+    font-size: 20px;
+    margin-left: 8px;
+    text-decoration: none;
+    margin-right: 25px;
+    padding-right: 3px;
+    color:white;
+}
+a:hover{
+    color: #32BDF2;
+    font-size: 21px;
+}
+
+body{
+    background-image: url('https://webprintmore.com/wp-content/uploads/2017/08/4214905-background-images-for-websites.jpg');
+    background-color: antiquewhite; 
+}
+
+

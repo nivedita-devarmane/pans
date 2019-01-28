@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="head-container"><span id="head">Fixed Deposit Calculator</span></div>
+    
+    <ul class="sub-container">
+      
+            <li>Principal Amount<input type="text" #p></li>
+            <li>Tenure (in Years)<input type="text" #t></li>
+            <li>Rate of Interest per Annum<input [value]='interest' [disabled]=true></li>
+            <li><button id="result" (click)="calculateFdMaturity(p.value, t.value)">Calculate</button>
+            {{maturity | currency:'INR'}}</li>
+    </ul>
+    
+
+</div>

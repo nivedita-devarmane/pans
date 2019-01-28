@@ -1,0 +1,12 @@
+<h1>Event Biniding Demo</h1>
+<hr>
+<h2>
+  Welcome! {{ uname }}
+</h2>
+<button (click) = "abc()">SEE WHAT HAPPENED in Console</button>
+
+
+
+<hr>
+Enter Name : <input type ="text" #myuser><br>
+<button (click)="greet(myuser.value)">Greet</button>

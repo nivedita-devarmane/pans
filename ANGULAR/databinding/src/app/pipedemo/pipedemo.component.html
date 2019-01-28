@@ -1,0 +1,37 @@
+<h1>Pipe Demo</h1>
+<hr>
+<h2>
+  <br>{{str}}
+  <br>{{str | uppercase}}
+  <br>{{str | lowercase}}
+  <br>{{str | slice:5:10}}
+  <!--from 5th charater to 10 character will be displayed-->
+  <br>
+  <br>{{ amount }}
+  <br>{{ amount|currency }}
+  <br>{{ amount|currency:'EUR' }}
+  <br>{{ amount|currency:'INR' }}
+  <br>
+  <br>
+  <br>{{ today }}
+  <br>{{ today | date}}
+  <br>{{ today | date:'fullDate' | uppercase}}
+  <!--Pipe Chaining-->
+  <br>{{ today | date:'dd/MM/yy'}}
+  <br>{{person}}
+  <br>{{person | json}}
+  <br>
+  <br>{{ 5 }}
+  <br>{{ 5 | mycube}}
+  <br>{{ 2 | mycube | mycube | currency:'INR'}}
+  <br>
+  <br>
+  <br>{{ 5 | numpower:'4' }}
+  <br>{{ 5 | numpower:'3' }}
+  <br>{{ 5 | numpower:'2' }}
+  <br>
+  <br>
+  <br>{{15000|salary}}
+
+</h2>
+<hr>

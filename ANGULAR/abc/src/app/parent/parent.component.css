@@ -1,0 +1,13 @@
+h1{
+    color:red;
+    font-size: 25px;
+}
+h2{
+    color:lime;
+}
+div{
+    width: 150px;
+    height: 100px;
+    background-color: blueviolet;
+    color:black;
+}

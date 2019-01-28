@@ -1,0 +1,15 @@
+<h1>Calculator</h1>
+<h2>Fist Value : </h2>  <input type="number" #number1 [disabled]='switch'><br><br>
+<h2>Second Value :</h2> <input type="number" #number2 [disabled]='switch'><br><br>
+<h2>Result is :</h2>  {{res}}
+<br>
+<br>
+<button (click)="sum(number1.value, number2.value)" [disabled]='switch'>Sum</button>
+<button (click)="mul(number1.value, number2.value)" [disabled]='switch' >Mul</button>
+<button (click)="sub(number1.value, number2.value)" [disabled]='switch'>Sub</button>
+<button (click)="div(number1.value, number2.value)" [disabled]='switch'>Div</button>
+<button (click)='toggle()'>ON/OFF</button>
+<br><br>
+
+<hr>
+<hr>

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="head-container"><span id="head">Auto Loan Calculator</span></div>
+  
+  <ul class="sub-container">
+    
+          <li>Input Loan Amount<input type="text" #lamt></li>
+          <li>Tenure (in Years)<input type="text" #t></li>
+          <li>Rate of Interest per Annum<input [value]='interest' [disabled]=true></li>
+          <li><button id="result" (click)="calculateEMI(lamt.value, t.value)">Calculate EMI</button>
+          {{emi | currency:'INR'}}</li>
+  </ul>
+  
+
+</div> 

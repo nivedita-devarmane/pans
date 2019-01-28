@@ -1,0 +1,36 @@
+<!--
+<h1>Directives Demo</h1>
+<hr>
+
+<div [ngClass]="{background:true, border:true, div:true}">
+  This is just for Demo
+</div>
+<hr>
+<h2 (click)="toggle()">Greet</h2>
+<h1 *ngIf="switch">Have a Nice Day</h1>
+  <hr>
+  <input type = "text" #fruitName><button (click) ="addFruits(fruitName.value)">Add Fruit</button>
+  <h2>
+    <ul>
+      <li *ngFor="let fruit of fruits; let i=index">{{i+1}} {{fruit}}</li>
+    </ul>
+    <input type = "hidden" #fruitName1><button (click) ="deleteFruits(fruitName.value)">Delete Fruit</button>
+  </h2>
+  -->
+  <h1>Switch Case Demo</h1>
+  <hr>
+  <ol>
+    <li>Person Component</li>
+    <li>Calculator Component</li>
+    <li>Calculator App</li>
+  </ol>
+  <input type="text" #mychoice><button (click)="opted(mychoice.value)">CHOOSE</button>
+  <h2 [ngSwitch]="choice">
+    <p *ngSwitchCase ="1">Your have chosen First Choice</p>
+    <p *ngSwitchCase ="2">Your have chosen Second Choice</p>
+    <p *ngSwitchCase ="3">Your have chosen Third Choice</p>
+    <p *ngSwitchCaseDefault>Your have chosen First Choice</p>
+
+  </h2>
+  
+<h3>Thank You</h3>

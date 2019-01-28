@@ -1,0 +1,14 @@
+<div class="container">
+        <div class="head-container"><span id="head">Recurring Deposit Calculator</span></div>
+
+    <ul class="sub-container">
+
+        <li>Monthly RD installment<input type="text" #rd></li>
+        <li>Maturity Period (in years)<input type="text" #years></li>
+        <li>Rate of Interest per Annum<input [value]='interest' [disabled]=true></li>
+        <li><button id="result" (click)="calculateRdMaturity(rd.value, years.value)">Calculate</button>
+            {{maturity | currency:'INR'}}</li>
+    </ul>
+
+
+</div>
